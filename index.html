@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMHASYDIEN - Ambalan Hasyim Asy'ari & Cut Nyak Dien</title>
+    <style>
+        :root {
+            --primary: #1a3e5f;
+            --secondary: #f8f1e5;
+            --accent: #e6c922;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+        
+        .logo span {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary);
+        }
+        
+        nav {
+            background-color: var(--primary);
+            padding: 0.5rem 0;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        
+        nav ul li a:hover, nav ul li a.active {
+            background-color: white;
+            color: var(--primary);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        section {
+            background-color: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        h1, h2, h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 3rem 0;
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://via.placeholder.com/1200x400');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+        
+        .hero h1 {
+            color: white;
+            font-size: 2.5rem;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery img:hover {
+            transform: scale(1.03);
+        }
+        
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        
+        .contact-card {
+            background-color: var(--secondary);
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .contact-card i {
+            font-size: 2rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+        
+        footer {
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpg.jpeg" alt="Logo AMHASYDIEN" style="width:180%; border-radius: 50%;;">
+        </div>
+        <h1>AMBALAN HASYIM ASY'ARI & CUT NYAK DIEN</h1>
+        <p>SMK Hasyim Asy'ari Bojong</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#tentang" class="active">Tentang</a></li>
+            <li><a href="#galeri">Galeri</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <section class="hero">
+            <h1>Selamat Datang di Website Ambalan AMHASYDIEN</h1>
+            <p>Satya Ku Kudarmakan, Darmaku Kubaktikan</p>
+        </section>
+        
+        <section id="tentang">
+    <h2>Tentang Ambalan Kami</h2>
+    
+    <div style="display:flex; flex-wrap:wrap; gap:2rem; margin:2rem 0;">
+        <!-- Foto Pembina Putra -->
+        <div style="text-align:center; flex:1; min-width:200px;">
+            <img src="images/pmbina-putra.jpeg" alt="Pembina Putra" 
+                 style="width:150px; height:150px; object-fit:cover; border-radius:50%; border:3px solid var(--primary);">
+            <h4>Pembina Putra</h4>
+            <p>M.Irsyad Habibi,S.Pd</p>
+        </div>
+        
+        <!-- Foto Pembina Putri -->
+        <div style="text-align:center; flex:1; min-width:200px;">
+            <img src="images/pembina-putri.jpeg" alt="Pembina Putri" 
+                 style="width:150px; height:150px; object-fit:cover; border-radius:50%; border:3px solid var(--primary);">
+            <h4>Pembina Putri</h4>
+            <p>Levita Zul Rizqi,S.Pd</p>
+        </div>
+    </div>
+</section>
+        
+        <section id="galeri">
+            <h2>Galeri Kegiatan</h2>
+            <p>Berikut beberapa momen kegiatan Ambalan AMHASYDIEN:</p>
+            
+            <div class="gallery">
+                <img src="images/jamran.jpeg" alt="Kegiatan Perkemahan">
+                <img src="images/larut.jpeg" alt="Latihan Pramuka">
+                <img src="images/karya-bakti (1).jpeg" alt="Kegiatan Sosial">
+                <img src="images/musyambal2.jpeg" alt="Upacara">
+                <img src="images/ppta (1).jpeg" alt="Api Unggun">
+                <img src="images/larut.jpeg" alt="Latihan rutin">
+            </div>
+        </section>
+
+
+        
+        <section id="kontak">
+            <h2>Hubungi Kami</h2>
+            <p>Untuk informasi lebih lanjut tentang Ambalan AMHASYDIEN, silakan hubungi kami melalui:</p>
+            
+            <div class="contact-info">
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Alamat</h3>
+                    <p>SMK Hasyim Asy'ari Bojong<br>Jl.Bojong</p>
+                </div>
+                
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>amhasydien9@gmail.com</p>
+                </div>
+                
+                <div class="contact-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>WhatsApp</h3>
+                    <p>+6287774473826</p>
+                </div>
+            </div>
+            
+            <h3 style="margin-top: 2rem;">Media Sosial</h3>
+            <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 1rem;">
+                <a href="https://www.instagram.com/pramukasmkhasyribojong?igsh=MXZoc2IzaXkyaTNvNQ==" target="blank" style="color: var(--primary); font-size: 1.5rem;"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/share/1BxFSbW2Mt/" target="blank" style="color: var(--primary); font-size: 1.5rem;"><i class="fab fa-facebook"></i></a>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Ambalan Hasyim Asy'ari & Cut Nyak Dien (AMHASYDIEN) - SMK Hasyim Asy'ari Bojong</p>
+        <p style="margin-top: 0.5rem;">Dibangun dengan semangat Pramuka</p>
+    </footer>
+    
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Update active class
+                document.querySelectorAll('nav a').forEach(link => {
+                    link.classList.remove('active');
+                });
+                this.classList.add('active');
+            });
+        });
+        
+        // Update active class on scroll
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('nav a');
+            
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (pageYOffset >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
